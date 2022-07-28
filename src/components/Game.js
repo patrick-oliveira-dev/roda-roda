@@ -42,7 +42,7 @@ const Game = ({
             ))}
         </div>
         <div className="letterContainer">
-            <p>Tente advinhar uma letra</p>
+            <p>Digite uma letra:</p>
             <form onSubmit={handleSubmit}>
                 <input
                  type="text"
@@ -58,7 +58,7 @@ const Game = ({
         <div className="wrongLettersContainer">
             <p>Letras já utilizadas:</p>
             {wrongLetters.map((letter, i) => (
-                <span key={i}>{letter}</span>
+                <span key={i}>{letter} - </span>
             ))}
         </div>
     </div>
